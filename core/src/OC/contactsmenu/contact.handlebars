@@ -1,12 +1,16 @@
 {{#if contact.avatar}}
-<img src="{{contact.avatar}}&size=32" class="avatar" srcset="{{contact.avatar}}&size=32 1x, {{contact.avatar}}&size=64 2x, {{contact.avatar}}&size=128 4x" alt="">
+<a class="profile-link--avatar" title="{{contact.profileTitle}}" href="{{contact.profileUrl}}">
+	<img src="{{contact.avatar}}&size=32" class="avatar" srcset="{{contact.avatar}}&size=32 1x, {{contact.avatar}}&size=64 2x, {{contact.avatar}}&size=128 4x" alt="">
+</a>
 {{else}}
-<div class="avatar"></div>
+<a class="profile-link--avatar" title="{{contact.profileTitle}}" href="{{contact.profileUrl}}">
+	<div class="avatar"></div>
+</a>
 {{/if}}
-<div class="body">
+<a class="body profile-link--full-name" title="{{contact.profileTitle}}" href="{{contact.profileUrl}}">
 	<div class="full-name">{{contact.fullName}}</div>
 	<div class="last-message">{{contact.lastMessage}}</div>
-</div>
+</a>
 {{#if contact.topAction}}
 <a class="top-action" href="{{contact.topAction.hyperlink}}" title="{{contact.topAction.title}}">
 	<img src="{{contact.topAction.icon}}" alt="{{contact.topAction.title}}">

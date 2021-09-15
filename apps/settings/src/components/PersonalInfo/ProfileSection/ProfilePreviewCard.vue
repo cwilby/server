@@ -30,7 +30,7 @@
 			:user="userId"
 			:size="48"
 			:show-user-status="true"
-			:show-user-status-compact="true"
+			:show-user-status-compact="false"
 			:disable-menu="true"
 			:disable-tooltip="true"
 			@click.native.prevent.stop="openStatusModal" />
@@ -87,7 +87,7 @@ export default {
 
 		profilePageLink() {
 			if (this.profileEnabled) {
-				return generateUrl('u/{userId}', { userId: getCurrentUser().uid })
+				return generateUrl('/u/{userId}', { userId: getCurrentUser().uid })
 			}
 			// Since an anchor element is used rather than a button for better UX,
 			// this hack removes href if the profile is disabled so that disabling pointer-events is not needed to prevent a click from opening a page

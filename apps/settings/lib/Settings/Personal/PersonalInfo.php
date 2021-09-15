@@ -307,7 +307,7 @@ class PersonalInfo implements ISettings {
 	 * returns the primary email and additional emails in an
 	 * associative array
 	 */
-	private function getEmails(IAccount $account): array {
+	private function getEmailMap(IAccount $account): array {
 		$systemEmail = [
 			'value' => $account->getProperty(IAccountManager::PROPERTY_EMAIL)->getValue(),
 			'scope' => $account->getProperty(IAccountManager::PROPERTY_EMAIL)->getScope(),
