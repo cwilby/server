@@ -718,6 +718,7 @@ class Manager implements IManager {
 	protected function getBuildInChecks(): array {
 		try {
 			return [
+				$this->container->query(FileExtension::class),
 				$this->container->query(FileMimeType::class),
 				$this->container->query(FileName::class),
 				$this->container->query(FileSize::class),
