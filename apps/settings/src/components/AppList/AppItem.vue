@@ -95,7 +95,7 @@
 				:value="enableButtonText"
 				:disabled="!app.canInstall || installing || isLoading"
 				@click.stop="enable(app.id)">
-			<input v-else-if="!app.active"
+			<input v-else-if="!app.active && (app.canInstall && !app.isCompatible)"
 				v-tooltip.auto="forceEnableButtonTooltip"
 				class="enable force"
 				type="button"
