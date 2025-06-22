@@ -11,6 +11,7 @@ use OCA\WorkflowEngine\Check\FileMimeType;
 use OCA\WorkflowEngine\Check\FileName;
 use OCA\WorkflowEngine\Check\FileSize;
 use OCA\WorkflowEngine\Check\FileSystemTags;
+use OCA\WorkflowEngine\Check\PathName;
 use OCA\WorkflowEngine\Check\RequestRemoteAddress;
 use OCA\WorkflowEngine\Check\RequestTime;
 use OCA\WorkflowEngine\Check\RequestURL;
@@ -691,6 +692,7 @@ class Manager implements IManager {
 	protected function getBuildInChecks(): array {
 		try {
 			return [
+				$this->container->query(PathName::class),
 				$this->container->query(FileMimeType::class),
 				$this->container->query(FileName::class),
 				$this->container->query(FileSize::class),

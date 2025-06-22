@@ -19,6 +19,18 @@ const stringOrRegexOperators = () => {
 
 const FileChecks = [
 	{
+		class: 'OCA\\WorkflowEngine\\Check\\PathName',
+		name: t('workflowengine', 'Path name'),
+		operators: stringOrRegexOperators,
+		placeholder: (check) => {
+			if (check.operator === 'matches' || check.operator === '!matches') {
+				return '/^dummy-.+$/i'
+			}
+			return 'Documents/Files'
+		},
+		validate: stringValidator,
+	},
+	{
 		class: 'OCA\\WorkflowEngine\\Check\\FileName',
 		name: t('workflowengine', 'File name'),
 		operators: stringOrRegexOperators,

@@ -29,6 +29,7 @@ class ComposerStaticInitWorkflowEngine
         'OCA\\WorkflowEngine\\Check\\FileName' => __DIR__ . '/..' . '/../lib/Check/FileName.php',
         'OCA\\WorkflowEngine\\Check\\FileSize' => __DIR__ . '/..' . '/../lib/Check/FileSize.php',
         'OCA\\WorkflowEngine\\Check\\FileSystemTags' => __DIR__ . '/..' . '/../lib/Check/FileSystemTags.php',
+        'OCA\\WorkflowEngine\\Check\\PathName' => __DIR__ . '/..' . '/../lib/Check/PathName.php',
         'OCA\\WorkflowEngine\\Check\\RequestRemoteAddress' => __DIR__ . '/..' . '/../lib/Check/RequestRemoteAddress.php',
         'OCA\\WorkflowEngine\\Check\\RequestTime' => __DIR__ . '/..' . '/../lib/Check/RequestTime.php',
         'OCA\\WorkflowEngine\\Check\\RequestURL' => __DIR__ . '/..' . '/../lib/Check/RequestURL.php',

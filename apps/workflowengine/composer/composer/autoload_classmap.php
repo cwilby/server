@@ -14,6 +14,7 @@ return array(
     'OCA\\WorkflowEngine\\Check\\FileName' => $baseDir . '/../lib/Check/FileName.php',
     'OCA\\WorkflowEngine\\Check\\FileSize' => $baseDir . '/../lib/Check/FileSize.php',
     'OCA\\WorkflowEngine\\Check\\FileSystemTags' => $baseDir . '/../lib/Check/FileSystemTags.php',
+    'OCA\\WorkflowEngine\\Check\\PathName' => $baseDir . '/../lib/Check/PathName.php',
     'OCA\\WorkflowEngine\\Check\\RequestRemoteAddress' => $baseDir . '/../lib/Check/RequestRemoteAddress.php',
     'OCA\\WorkflowEngine\\Check\\RequestTime' => $baseDir . '/../lib/Check/RequestTime.php',
     'OCA\\WorkflowEngine\\Check\\RequestURL' => $baseDir . '/../lib/Check/RequestURL.php',
